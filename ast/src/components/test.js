@@ -1,14 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2022-04-07 16:17:58
- * @LastEditTime: 2022-04-07 16:30:06
+ * @LastEditTime: 2022-04-07 17:15:13
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /vue-ast/ast/src/components/test.js
  */
 const $ = require('gogocode');
 
-const code = `
+export const oldCode = `
 import { Button, jsx } from "@alifd/next";
 
 const Button1 = () => {
@@ -35,11 +35,9 @@ const Button1 = () => {
 export default Button1;
 `
 
-const myCode = $(code)
+export const newCode = $(oldCode)
   .replace(`import { $$$ } from "@alifd/next";`, `import { $$$ } from "antd";`)
   .replace(`<Button type="normal" $$$></Button>`, `<Button type="default" $$$></Button>`)
   .replace(`<Button text $$$></Button>`, `<Button $$$ type="link"></Button>`)
   .replace(`<Button warning $$$></Button>`, `<Button danger $$$></Button>`)
   .generate()
-
-export default myCode

@@ -1,10 +1,18 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-04-07 14:34:56
+ * @LastEditTime: 2022-04-07 17:03:17
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /vue-ast/ast/src/App.vue
+-->
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    </div> -->
+    <router-view />
   </div>
 </template>
 
