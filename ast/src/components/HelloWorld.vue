@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2022-04-07 14:34:56
- * @LastEditTime: 2022-04-11 18:10:11
+ * @LastEditTime: 2022-04-12 15:50:25
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /vue-ast/ast/src/components/HelloWorld.vue
@@ -11,19 +11,18 @@
     <h2>替换前</h2>
     <div class="box">
       <codemirror class="mymirror" v-model="oldCode"></codemirror>
-      <div id="page1" class="page">111</div>
+      <div id="page1" class="page"></div>
     </div>
     <h2>替换后</h2>
     <div class="box">
       <codemirror class="mymirror" v-model="newCode"></codemirror>
-      <div id="page2" class="page">222</div>
+      <div id="page2" class="page"></div>
     </div>
   </div>
 </template>
 
 <script> 
-// import Vue from 'vue'
-import { newCode, oldCode } from './demo4'
+import { newCode, oldCode } from './demo5'
 import { codemirror } from 'vue-codemirror-lite'
 export default {
   name: 'HelloWorld',
@@ -34,7 +33,7 @@ export default {
     }
   },
   components: {
-    codemirror
+    codemirror,
   },
   mounted () {
     this.init()
@@ -51,7 +50,7 @@ export default {
 <style scoped lang="less">
 .hello {
   .mymirror {
-    width: 50%;
+    width: 80%;
     text-align: left;
     /deep/ .CodeMirror {
       background-color: #1e1e1e !important;

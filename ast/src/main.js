@@ -2,13 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import Antd from "ant-design-vue";
+import 'ant-design-vue/dist/antd.css';
 
 Vue.config.productionTip = false
 
-// import { newCode } from './components/demo3'
-// import newCode from './views/About'
-// console.log(newCode, 111)
-// Vue.component('demo', newCode);
+Vue.use(Antd);
 
 new Vue({
   router,
