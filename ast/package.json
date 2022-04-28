@@ -10,6 +10,7 @@
   "dependencies": {
     "ant-design-vue": "^1.7.2",
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.8",
     "gogocode": "^1.0.52",
     "vue": "^2.6.11",
     "vue-codemirror-lite": "^1.0.4",
